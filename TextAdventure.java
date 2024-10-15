@@ -18,22 +18,38 @@ public class TextAdventure
   public void play()
   {
     String input;
+    int numInput;
     // start of adventure. You can change this if you like
     console.setImage("distantcity.jpg");
 
     // ask the user for their name.
     System.out.println("What is your name?\n");
     input = inScanner.nextLine();
-
     // Change ourHero's name
     // ADD CODE HERE
-    
+    ourHero.changeName(input);
     // describe the starting situation. Feel free to change this
-    System.out.println("You wake up to find yourself on the edge of a shadowy forest with the sun nearly set. \nYou see what looks like a city in the distance. \nWhat would you like to do? \ncity: go towards the city\nforest: turn around and re-enter the forest\nnap: go back to sleep\n" + ourHero.getName() + ": ");
-
+    System.out.println("You wake up to find yourself on the edge of a shadowy forest with the sun nearly set. 
+        \nYou see what looks like a city in the distance. 
+        \nWhat would you like to do? 
+        \ncity: go towards the city\nforest: turn around and re-enter the forest\nnap: go back to sleep\n" + ourHero.getName() + ": ");
+    numInput = inScanner.nextInt();
     // get user input and go to the appropriate zone based on their input
     // ADD CODE HERE
-
+    switch(numInput){
+      case 1:
+        break;
+      case 2:
+        break;
+      case 3:
+        break;
+      case 4:
+        break;
+      case 5:
+        break;
+      case 6:
+        break;
+    }
   }
 
   private void enterZone1()
